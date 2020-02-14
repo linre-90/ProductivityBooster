@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="productivitybooster.UserGuideController">
+   <bottom>
+      <Text boundsType="VISUAL" fill="#c32525" strokeType="OUTSIDE" strokeWidth="0.0" text="Productivity Booster" textAlignment="CENTER" underline="true" BorderPane.alignment="CENTER_RIGHT">
+         <font>
+            <Font name="ISOCP3_IV25" size="48.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </Text>
+   </bottom>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="topicsList" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#setGuideText" prefHeight="600.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+            <Button mnemonicParsing="false" onAction="#goBack" text="Back">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Text fx:id="guideText" boundsType="VISUAL" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
